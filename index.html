@@ -43,7 +43,7 @@
 					<p>Slash Commands enable you to interact with MDNBot from within Slack. Start your search by typing <code>/mdnbot-search</code> followed by your <strong>searchTerm</strong>.</p>
 					<p>Let's say you want information on <strong>reduce</strong>, just type <code>/mdnbot-search reduce</code> This will return a list of (max.) 10 items related to <strong>reduce</strong> which is only visible to you. </p>
 					<p>If you want to filter your search results by topic (eg. js, html, css), type the topic as the last term in your command, for example <code>/mdnbot-search reduce js</code> 
-					<p>If you want to show a certain search result to another developer, type <code>/mdnbot-show</code> followed by the <strong>searchTerm</strong> (and <em>searchTopic</em> if needed) and the first result of your search will be displayed. Example: <code>/mdnbot-show reduce</code></p>
+					<p>If you want to show a search result to another developer, type <code>/mdnbot-show</code> followed by the <strong>searchTerm</strong> (and <em>searchTopic</em> if needed). By default the first result of your search will be displayed. If you want to display a specific result, add the result number to the end of your show command. Example: <code>/mdnbot-show reduce 4 </code></p>
 					<p><strong>Happy searching!</strong></p>
 				</section> <!-- /#usage -->
 				<section id="commands" class="grid-half">
@@ -61,7 +61,7 @@
 								<td class="command"><code class="inverse">/mdnbot-show [searchTerm] [searchTopic] [itemNumber] *</code><br><span class="description">This command performs a public search and returns 1 result, which is visible for everyone. If, for example, you want to <strong>show</strong> the 4th item of your search, just add the number 4 to the end of your show command.</td>
 							</tr>
 							<tr>
-								<td class="command"><code class="inverse">/mdnbot-random</code><span class="description">This command performs a private search with a random term and returns a maximum of 10 results, which are only visible to you.</span></td>
+								<td class="command"><code class="inverse">/mdnbot-random</code><span class="description">This command performs a public search with a random term and returns a single result, which is visible to everyone.</span></td>
 							</tr>
 							<tr>
 								<td class="command"><span class="description"><strong>* searchTopic and itemNumber</strong> are optional parameters.</span></td>
