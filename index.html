@@ -1,13 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>MDN-Bot</title>
-</head>
-<body>
-
-<h1> Install app </h1>
-
-<a href="https://slack.com/oauth/authorize?&client_id=113409873799.150014989842&scope=commands"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
-
-</body>
+	<head>
+		<title>MDN-Bot</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<script src="https://use.fontawesome.com/fade99b208.js"></script>
+	</head>
+	<body>
+		<div class="row header">
+			<header id="header" class="container">
+				<div class="grid-half header-image">
+					<img src="img/MDNBot_hi.svg" class="logo" alt="MDNBot">
+				</div> <!-- /.header-image -->
+				<div class="grid-half title">
+					<h1>MDNBot</h1>
+					<span class="pay-off">A Slack app by <strong>VEJAER</strong></span>
+					<a class="download-button" href="https://slack.com/oauth/authorize?&client_id=113409873799.150014989842&scope=commands"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+				</div> <!-- /.title -->
+			</header>
+		</div> <!-- /.row header -->
+		<div class="row intro">
+			<div class="container">
+				<section id="intro" class="grid-half">
+					<p>I'm <strong>MDNBot</strong> and my job is to make your life as a develepor easier! Need a quick reference on CSS, HTML or JavaScript web standards? MDNbot has you covered.</p>
+					<p>Just tell me what you're looking for and I'll search the <a href="https://developer.mozilla.org/en-US/" target="_blank" title="Mozilla Developer Network">Mozilla Developer Network</a> (MDN) for you and find the answer.</p>
+					<p>I'm currently available for Slack, you can easily add me to your Slack team by clicking the button below!</p>
+					<a href="https://slack.com/oauth/authorize?&client_id=113409873799.150014989842&scope=commands"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+				</section><!-- /intro -->
+				<section id="screenshot"  class="grid-half">
+					<img src="img/screenshot.png" class="screenshot" alt="MDNBot screenshot">
+				</section><!-- /#screenshot -->
+			</div><!-- /container -->
+		</div><!-- /row intro -->
+		<div class="row instructions">
+			<div class="container">
+				<h2 class="grid-full section-title">How to use me...</h2>
+				<section id="usage" class="grid-half">
+					<p>Slash Commands enable you to interact with MDNBot from within Slack. Start your search by typing <code>/mdnbot-search</code> followed by your <strong>searchTerm</strong>.</p>
+					<p>Let's say you want information on <strong>reduce</strong>, just type <code>/mdnbot-search reduce()</code> This will return a list of (max.) 10 items related to <strong>reduce</strong> which is only visible to you. </p>
+					<p>If you want to filter your search results by topic (eg. js, html, css), type the topic as the last term in your command, for example <code>/mdnbot reduce js</code> 
+					<p>If you want to show a certain search result to another developer, type <code>/mdnbot-show</code> followed by the <strong>searchTerm</strong> (and <em>searchTopic</em> if needed) and the first result of your search will be displayed. Example: <code>/mdnbot-show reduce()</code></p>
+					<p><strong>Happy searching!</strong></p>
+				</section> <!-- /#usage -->
+				<section id="commands" class="grid-half">
+					<div class="bot-image"><img src="img/MDNBot_command.svg" alt="MDNBot commands"></div>
+					<table>
+						<tbody>
+							<tr><td><strong>Available commands</strong></td></tr>
+							<tr>
+								<td class="command"><code class="inverse">/mdnbot</code><span class="description">This command returns a brief description of the app and a basic how-to-use instruction.</span></td>
+							</tr>
+							<tr>
+								<td class="command"><code class="inverse">/mdnbot-search [searchTerm] [searchTopic]*</code><br><span class="description">This command performs a private search and resturns a maximum of 10 results, which are only visible to you.</span></td>
+							</tr>
+							<tr>
+								<td class="command"><code class="inverse">/mdnbot-show [searchTerm] [searchTopic] [itemNumber] *</code><br><span class="description">This command performs a public search and returns 1 result, which is visible for everyone. If, for example, you want to <strong>show</strong> the 4th item of your search, just add the number 4 to the end of your show command.</td>
+							</tr>
+							<tr>
+								<td class="command"><code class="inverse">/mdnbot-random</code><span class="description">This command performs a private search with a random term and returns a maximum of 10 results, which are only visible to you.</span></td>
+							</tr>
+							<tr>
+								<td class="command"><span class="description"><strong>* searchTopic and itemNumber</strong> are optional parameters.</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</section> <!-- /#commands -->
+			</div> <!-- /.container -->
+		</div> <!-- /.instructions -->
+		<div class="row footer">
+			<footer id="footer" class="container">
+				<section class="grid-half footer-image">
+					<div class="bot-image-footer"><img src="img/MDNBot_help.svg" alt="MDNBot help"></div>
+				</section> <!-- /.footer-image -->
+				<section class="grid-half contact">
+					<h4><a href="https://github.com/VEJATHER/belugas-bot" alt="Github page" id="github" class="icon-link" target="_blank">Need help or found an issue...
+					&nbsp;<i class="fa fa-github" aria-hidden="true"></i></a></h4>
+				</section> <!-- /.contact -->
+			</footer>
+		</div> <!-- /.row footer -->
+	</body>
 </html>
