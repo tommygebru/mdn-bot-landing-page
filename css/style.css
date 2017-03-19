@@ -8,6 +8,32 @@
 #9bcceb
 #4d4e53
 
+/*--------------------------------------------------------------
+# Splash screens
+--------------------------------------------------------------*/
+.splash {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 25vh;
+  text-align: center;
+  background: #FFF;
+  z-index: 99999;	
+  background-position: 50% 2%; 
+    background-size: 23vh;
+  background-repeat: no-repeat;
+}
+.splash-success {
+  color: #000;
+  background-blend-mode: normal;
+}
+
+.splash-failure {
+  color: #000;
+  background-blend-mode: exclusion;
+}
 
 /*--------------------------------------------------------------
 # General
