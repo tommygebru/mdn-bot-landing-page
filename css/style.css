@@ -65,6 +65,40 @@ a:visited {
 	color: #26a3dd;
 }
 
+a.button {
+	background: white;
+	border-radius: 0.3rem;
+	color:  #264880;
+	display: inline-block;
+	font-weight: 600;
+	padding: 0.5rem 0.8rem;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+	width: auto;
+}
+
+a.button:hover {
+	box-shadow: 5px 5px 10px #689bbc;
+}
+
+a.privacy {
+	background: #264880;
+	border-radius: 0.3rem 0.3rem 0 0;
+	bottom: 0;
+	color: white;
+	font-size: 0.8rem;
+	font-weight: 600;
+	left: 2rem;
+	padding: 0.2rem 0.5rem;
+	position: absolute;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+a.privacy:hover {
+	color: #9bcceb;
+}
+
 /*--------------------------------------------------------------
 # Containers + grid 
 --------------------------------------------------------------*/
@@ -118,7 +152,9 @@ section {
 	display: block;
 	margin: 0 auto;
 	padding: 0 1rem;
+	position: relative;
 	width: 260px;
+	z-index: 100;
 }
 
 .title {
@@ -134,14 +170,14 @@ section {
  	margin: 0;
  }
 
- span.pay-off {
+span.pay-off {
  	color: #26a3dd;
  	display: block;
  	font-size: 0.9rem;
  	font-weight: 700;
  	letter-spacing: 0.15rem;
  	margin-bottom: 1.4rem;
- }
+}
 
 /*--------------------------------------------------------------
 # Content
@@ -158,6 +194,15 @@ section {
 
 #commands {
 	position: relative;
+}
+
+#information-policy {
+	background: white;
+	border: 1px solid white;
+	border-radius: 0.5rem;
+	box-shadow: 5px 5px 10px #689bbc;
+	display: block;
+	padding: 0.9rem;
 }
 
 /*--------------------------------------------------------------
@@ -244,7 +289,7 @@ td, th {
 	color: #264880;
 }
 
-a i.fa {
+a i.fa-github {
 	color: #264880;
 	font-size: 2rem;
 }
