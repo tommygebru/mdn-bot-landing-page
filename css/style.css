@@ -456,6 +456,6 @@ a i.fa-github {
 		color: white;
 	}
 	a.support {
-		top: -4rem;
+		bottom: -4rem;
 	}
 }
