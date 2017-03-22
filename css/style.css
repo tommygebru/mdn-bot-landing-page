@@ -99,6 +99,26 @@ a.privacy:hover {
 	color: #9bcceb;
 }
 
+a.directmail {
+	background: #9bcceb;
+	border-radius: 0.3rem;
+	color: #264880;
+	display: block;
+	font-size: 0.8rem;
+	font-weight: 600;
+	margin: 0.6rem auto;
+	padding: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+	width: 8rem;
+}
+
+a.directmail:hover {
+	background: #264880;
+	color: white;
+}
+
 /*--------------------------------------------------------------
 # Containers + grid 
 --------------------------------------------------------------*/
@@ -114,6 +134,13 @@ a.privacy:hover {
 	max-width: 1024px;
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.container-small {
+	margin: 0 auto;
+	max-width: 600px;
+	position: relative;
+	text-align: center;
 }
 
 section {
@@ -192,6 +219,10 @@ span.pay-off {
 	background: #9bcceb;
 }
 
+.support {
+	background: #9bcceb;
+}
+
 #commands {
 	position: relative;
 }
@@ -217,6 +248,10 @@ span.pay-off {
 	top: -5rem;
 	width: 11rem;
 }
+
+/* .bot-image-support {
+	right: 0;
+} */
 
 .bot-image-footer {
 	height: 6rem;
@@ -261,6 +296,68 @@ table {
 td, th {
 	text-align: left;
 	padding: 0.5rem 0;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+#form {
+	margin: 0 auto;
+	max-width: 600px;
+	margin-top: 4rem;
+	position: relative;
+}
+
+.form {
+	background: white;
+	border: 1px solid white;
+	border-radius: 0.5rem;
+	box-shadow: 5px 5px 10px #689bbc;
+	display: block;
+	padding: 1.5rem 3rem;
+}
+
+input,
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea {
+	background: whitesmoke;
+	border: none;
+	font-size: 0.9rem;
+	margin: 1rem 0 0 0;
+	padding: 0.7rem;
+	width: 100%;
+
+
+}
+
+input[type="submit"] {
+	background: #264880;
+	border-radius: 0.3rem;
+	color:  white;
+	display: inline-block;
+	font-weight: 600;
+	padding: 1rem;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+	width: 100%;
+}
+
+input[type="submit"]:hover {
+	background: #9bcceb;
+	box-shadow: 4px 4px 8px whitesmoke;
+	color: #264880;
+	cursor: pointer;
+}
+
+textarea {
+
+}
+.error {
+	color: red;
+	display: none;
+	font-size: 0.8rem;
 }
 
 /*--------------------------------------------------------------

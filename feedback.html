@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>MDNBot Support Request</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+        <script src="js/form.js"></script>
+        <script src="https://use.fontawesome.com/fade99b208.js"></script>
+    </head>
+    <body>
+        <div class="row header">
+            <header id="header" class="container">
+                <div class="grid-half header-image">
+                    <img src="img/MDNBot_hi.svg" class="logo" alt="MDNBot">
+                </div> <!-- /.header-image -->
+                <div class="grid-half title">
+                    <h1>MDNBot</h1>
+                    <span class="pay-off">A Slack app by <strong>VEJATHER</strong></span>
+                    <a href="https://slack.com/oauth/authorize?&client_id=149347005137.156085577376&scope=commands,team:read"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+                </div> <!-- /.title -->
+            </header>
+        </div> <!-- /.row header -->
+        <div class="row support">
+            <div class="container grid-full">
+                <!-- <h2 class="grid-full section-title">MDNBot Support</h2> -->
+                <section id="form" class="grid-full">
+                    <div class="bot-image bot-image-support"><img src="img/MDNBot_support.svg" alt="MDNBot commands"></div>
+                    <div class="form">
+                        <h2>Help / Feedback</h2>
+                        <p>
+                            Please send us your questions, bug reports, complaints, praise, feature requests - every little bit helps. Let us know what we can do to improve MDNBot.
+                        </p>
+                        <form id="support-form" action="https://formspree.io/erikhos@outlook.com" method="POST">
+                            <input type="email" id="email" placeholder="Your email" name="_replyto">
+                            <label class="error" id="email_error">Email is required</label>
+                            <!-- <input type="hidden" name="_next" value="https://vejather.github.io/mdn-bot-landing-page/thanks.html" /> -->
+                            <input type="hidden" name="_subject" value="New submission!" />
+                            <!-- <input type="hidden" name="_cc" value="mihaiveronica@email.com" /> -->
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <textarea id="message" name="message" placeholder="Your message" rows="6"></textarea>
+                            <label class="error" id="message_error">Your message is required</label>
+                            <input type="submit" value="Send" id="submit">
+                        </form>
+                        <a href="mailto:vejather@outlook.com?subject=MDNBot Support Request"" class="directmail"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;Email directly</a>
+                    </div>
+                </section> <!-- /#form -->
+                <section id="usage" class="grid-full container-small">
+                    <a href="https://vejather.github.io/mdn-bot-landing-page/" title="MDNBot homepage" class="button"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;&nbsp;MDNBot homepage</a>
+                </section> <!-- /#usage -->
+            </div> <!-- /.container -->
+        </div> <!-- /.instructions -->
+        
 
-<head>
-    <title>MDNBot Help Request</title>
-</head>
-
-<body>
-    <h1>Help / Feedback</h1>
-    <p>
-        Please send us your questions, bug reports, complaints, praise, feature requests — every little bit helps. Let us know what we can do to improve MDNBot.
-    </p>
-    <form action="https://formspree.io/vejather@outlook.com" method="POST">
-        <input type="email" placeholder="Your email" name="_replyto">
-        <input type="hidden" name="_next" value="https://vejather.github.io/mdn-bot-landing-page/thanks.html" />
-        <input type="hidden" name="_subject" value="New submission!" />
-        <input type="hidden" name="_cc" value="mihaiveronica@email.com" />
-        <input type="text" name="_gotcha" style="display:none" />
-        <textarea name="message" placeholder="Your message"></textarea>
-        <input type="submit" value="Send">
-    </form>
-</body>
-
+    </body>
 </html>
