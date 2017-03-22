@@ -39,12 +39,12 @@
                         <p>
                             Please send us your questions, bug reports, complaints, praise, feature requests - every little bit helps. Let us know what we can do to improve MDNBot.
                         </p>
-                        <form id="support-form" action="POST">
+                        <form id="support-form" action="https://formspree.io/erikhos@outlook.com" method="POST">
                             <input type="email" id="email" placeholder="Your email" name="_replyto">
                             <label class="error" id="email_error">Email is required</label>
-                            <!-- <input type="hidden" name="_next" value="https://vejather.github.io/mdn-bot-landing-page/thanks.html" /> -->
+                            <input type="hidden" name="_next" value="https://vejather.github.io/mdn-bot-landing-page/thanks.html" /> 
                             <input type="hidden" name="_subject" value="New submission!" />
-                            <!-- <input type="hidden" name="_cc" value="mihaiveronica@email.com" /> -->
+                            <input type="hidden" name="_cc" value="erikhos@gmail.com" />
                             <input type="text" name="_gotcha" style="display:none" />
                             <textarea id="message" name="message" placeholder="Your message" rows="6"></textarea>
                             <label class="error" id="message_error">Your message is required</label>
