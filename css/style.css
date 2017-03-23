@@ -135,8 +135,11 @@ a.directmail {
 	font-weight: 600;
 	margin: 0.6rem auto;
 	padding: 0.5rem;
+	position: absolute;
+	right: 3rem;
 	text-align: center;
 	text-decoration: none;
+	top: 2rem;
 	transition: all 0.2s ease-in-out;
 	width: 8rem;
 }
@@ -344,6 +347,7 @@ td, th {
 	box-shadow: 5px 5px 10px #689bbc;
 	display: block;
 	padding: 1.5rem 3rem;
+	position: relative;
 }
 
 input,
