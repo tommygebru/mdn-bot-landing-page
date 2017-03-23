@@ -108,13 +108,13 @@ a.privacy:hover {
 a.support {
 	background: #9bcceb;
 	border-radius: 0 0 0.3rem 0.3rem;
-	bottom: -4.6rem;
+	bottom: -5.1rem;
 	color: #264880;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	font-weight: 600;
-	height: 2rem;
+	/* height: 2rem; */
 	right: 2rem;
-	padding: 0.3rem 0.5rem 0.5rem 0.5rem;
+	padding: 0.4rem 0.5rem 0.5rem 0.5rem;
 	position: absolute;
 	text-decoration: none;
 	transition: all 0.2s ease-in-out;
@@ -465,6 +465,6 @@ a i.fa-envelope {
 		color: white;
 	}
 	a.support {
-		bottom: -4rem;
+		bottom: -4.5rem;
 	}
 }
