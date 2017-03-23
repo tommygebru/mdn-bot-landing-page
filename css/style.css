@@ -417,9 +417,10 @@ textarea {
 	color: #264880;
 }
 
-a i.fa-github {
+a i.fa-github,
+a i.fa-envelope {
 	color: #264880;
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 
 /*--------------------------------------------------------------
