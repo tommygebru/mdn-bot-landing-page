@@ -108,13 +108,13 @@ a.privacy:hover {
 a.support {
 	background: #9bcceb;
 	border-radius: 0 0 0.3rem 0.3rem;
-	bottom: -4.6rem;
+	bottom: -5.1rem;
 	color: #264880;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	font-weight: 600;
-	height: 2rem;
+	/* height: 2rem; */
 	right: 2rem;
-	padding: 0.3rem 0.5rem 0.5rem 0.5rem;
+	padding: 0.4rem 0.5rem 0.5rem 0.5rem;
 	position: absolute;
 	text-decoration: none;
 	transition: all 0.2s ease-in-out;
@@ -135,8 +135,11 @@ a.directmail {
 	font-weight: 600;
 	margin: 0.6rem auto;
 	padding: 0.5rem;
+	position: absolute;
+	right: 3rem;
 	text-align: center;
 	text-decoration: none;
+	top: 2rem;
 	transition: all 0.2s ease-in-out;
 	width: 8rem;
 }
@@ -344,6 +347,7 @@ td, th {
 	box-shadow: 5px 5px 10px #689bbc;
 	display: block;
 	padding: 1.5rem 3rem;
+	position: relative;
 }
 
 input,
@@ -413,9 +417,14 @@ textarea {
 	color: #264880;
 }
 
-a i.fa-github {
+a i.fa-github,
+a i.fa-envelope {
 	color: #264880;
-	font-size: 2rem;
+	font-size: 1.8rem;
+}
+
+a i.fa-envelope {
+	font-size: 1.6rem;
 }
 
 /*--------------------------------------------------------------
@@ -456,6 +465,6 @@ a i.fa-github {
 		color: white;
 	}
 	a.support {
-		bottom: -4rem;
+		bottom: -4.5rem;
 	}
 }
